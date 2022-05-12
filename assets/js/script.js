@@ -54,5 +54,3 @@ possibleChoices.forEach(possibleChoices=> possibleChoices.addEventListener('clic
     generateComputerChoice()
     getResult()
 }))
-
-let yes
