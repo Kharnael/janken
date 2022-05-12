@@ -9,21 +9,25 @@ let result
 // audio correct de bouton
 let playWin = () => {
   new Audio('assets/img/nice.mp3').play()
+  Audio.volume = 0.2;
 }
 
 // audio incorrect de bouton
 let playLose = () => {
   new Audio('assets/img/wrong.mp3').play()
+  Audio.volume = 0.2;
 }
 
 //audio égalité de bouton
 let playDraw = () => {
   new Audio('assets/img/draw.mp3').play()
+  Audio.volume = 0.2;
 }
 
 //bouton musique
 let playMusic = () => {
   new Audio('assets/img/.mp3').play()
+  
 }
 
 

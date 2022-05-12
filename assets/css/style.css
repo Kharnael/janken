@@ -50,6 +50,14 @@ button {
     height: 100px;
   }
 
+  /* bouton musique  */
+  #playMusic {
+    position: absolute;
+    width: 30px;
+    bottom: 10px;
+    left: 10px;
+    color: #D9726B;
+  }
 
 
   /* Titre */
