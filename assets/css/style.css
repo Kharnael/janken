@@ -14,6 +14,7 @@ body {
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -27,6 +28,7 @@ font-size: 2rem;
 padding: 20px;
 color: #D9726B;
 margin: 15px;
+margin-bottom: 50px;
 z-index: 1;
 /* glass effect */
 background: rgba(48, 44, 63, 0.61);
@@ -43,9 +45,9 @@ button {
     text-shadow: 0 0 2px black;    
     color: #D9726B;
     border-radius: 10px;
-    font-size: 1rem;
-    width: 150px; 
-    height: 150px;
+    font-size: 0rem;
+    width: 100px; 
+    height: 100px;
   }
 
 
@@ -80,7 +82,8 @@ button {
     z-index: 1;
   }
 
-  /* Texte  */
+
+/* span fonctions */
   .content h3 {
     text-align: center;
     color: #D9726B;
@@ -95,5 +98,6 @@ button {
     font-size: 0.9rem;
     padding: 20px;
     z-index: 1;
+    margin-bottom: -80px;
   }
   
