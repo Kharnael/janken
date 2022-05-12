@@ -19,58 +19,81 @@ body {
     overflow: hidden;
   }
 
-/* Contenu principal */
+/* Contenu principal */ 
 .content {
 text-align: center;
-text-shadow: 0 0 20px black;
+text-shadow: 0 0 6px black;
 font-size: 2rem;
 padding: 20px;
 color: #D9726B;
 margin: 15px;
 z-index: 1;
-opacity: 1;
-margin-top: -150x;
 /* glass effect */
-background: rgba(28, 0, 0, 0.38);
+background: rgba(48, 44, 63, 0.61);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(3.2px);
--webkit-backdrop-filter: blur(3.2px);
-border: 1px solid rgba(28, 0, 0, 0.41);
+backdrop-filter: blur(5.3px);
+-webkit-backdrop-filter: blur(5.3px);
+border: 1px solid rgba(255, 255, 255, 0.77);
 }
 
 /* Boutons */
 button {
-    background-color: #38324E;
+    background-color: #2A2029;
+    text-shadow: 0 0 2px black;    
     color: #D9726B;
-}
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 150px; 
+    height: 150px;
+  }
+
 
 
   /* Titre */
   .section h1 {
     text-align: center;
+    color: #D9726B;
     font-size: 6rem;
     padding: 20px;
     z-index: 1;
   }
   
 
+/* Résultat */
+.content h1 {
+  color: #D9726B;
+  text-align: center;
+  font-size: 3rem;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  }
+
 
 /* Texte  */
   .content h2 {
     text-align: center;
-    font-size: 2rem;
+    color: #D9726B;
+    font-size: 1.5rem;
     padding: 20px;
     z-index: 1;
-    opacity: 0.7;
   }
 
-  /* Résultat */
-  .content h1 {
+  /* Texte  */
+  .content h3 {
     text-align: center;
-    font-size: 4rem;
+    color: #D9726B;
+    font-size: 1.3rem;
     padding: 20px;
-    margin: 15px;
     z-index: 1;
-    opacity: 0.7;
-    }
+  }
+
+  footer {
+    text-align: center;
+    color: #D9726B;
+    font-size: 0.9rem;
+    padding: 20px;
+    z-index: 1;
+  }
+  

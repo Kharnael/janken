@@ -50,7 +50,7 @@ let generateComputerChoice = () => {
 
 possibleChoices.forEach(possibleChoices=> possibleChoices.addEventListener('click', (e) => {
     choice = e.target.id
-    userChoiceDisplay.innerHTML = (`You chose : ${choice}`)
+    userChoiceDisplay.innerHTML = (`You have chosen : ${choice}`)
     generateComputerChoice()
     getResult()
 }))
