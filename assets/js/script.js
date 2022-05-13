@@ -25,24 +25,24 @@ let playDraw = () => {
   Audio.volume = 0.2;
 }
 
-//bouton musique
-let playBgm = () => {
-  const music = document.querySelector('#music');
-  if(soundAmbiance.src == 'assets/img/volumeoff.svg' || soundAmbiance.src == 'assets/img/volumeoff.svg') {
-    soundAmbiance.src = 'assets/img/volume.svg';
-    music.volume = 0.5;
-    music.play();
-  } 
-  else {  
-  soundAmbiance.src ='assets/img/volumeoff.svg';
-  music.pause();
-  music.currentTime = 0;
-  }
-}
+// //bouton musique
+// let playBgm = () => {
+//   const music = document.querySelector('#music');
+//   if(soundAmbiance.src == 'assets/img/volumeoff.svg' || soundAmbiance.src == 'assets/img/volumeoff.svg') {
+//     soundAmbiance.src = 'assets/img/volume.svg';
+//     music.volume = 0.5;
+//     music.play();
+//   } 
+//   else {  
+//   soundAmbiance.src ='assets/img/volumeoff.svg';
+//   music.pause();
+//   music.currentTime = 0;
+//   }
+// }
 
-// audio click
-let soundAmbiance = document.getElementById('soundAmbiance');
-soundAmbiance.addEventListener('click', play);
+// // audio click
+// let soundAmbiance = document.getElementById('soundAmbiance');
+// soundAmbiance.addEventListener('click', play);
 
 
 
