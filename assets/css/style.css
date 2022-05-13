@@ -1,6 +1,7 @@
 /* Reset scrollbar */
 body {
     margin: 0px;
+    font-family: 'Yeon Sung', cursive;
 }
 
 /* Intégration bg video */
@@ -40,8 +41,20 @@ border: 1px solid rgba(255, 255, 255, 0.77);
 }
 
 /* Boutons */
-button {
-    background-color: #2A2029;
+img {
+    text-shadow: 0 0 2px black;    
+    color: #D9726B;
+    border-radius: 10px;
+    font-size: 0rem;
+    width: 80px; 
+    height: 80px;
+    color: rgb(217, 114, 107);
+    z-index: 1;
+    filter: invert(66%) sepia(20%) saturate(6696%) hue-rotate(319deg) brightness(97%) contrast(75%);
+  }
+
+  button {
+    background-color: #2F253B;
     text-shadow: 0 0 2px black;    
     color: #D9726B;
     border-radius: 10px;
@@ -49,21 +62,20 @@ button {
     width: 100px; 
     height: 100px;
   }
-
   /* bouton musique  */
-  #playMusic {
+  #soundAmbiance {
     position: absolute;
-    width: 30px;
-    bottom: 10px;
-    left: 10px;
-    color: #D9726B;
+    width: 25px;
+    top: -10px;
+    right: 20px;
+    color: rgb(217, 114, 107);
+    z-index: 1;
+    filter: invert(66%) sepia(20%) saturate(6696%) hue-rotate(319deg) brightness(97%) contrast(75%);
   }
-
 
   /* Titre */
   .section h1 {
     text-align: center;
-    color: #D9726B;
     font-size: 6rem;
     padding: 20px;
     z-index: 1;
@@ -97,6 +109,7 @@ button {
     color: #D9726B;
     font-size: 1.3rem;
     padding: 20px;
+    margin-top: -65px;
     z-index: 1;
   }
 
@@ -106,6 +119,5 @@ button {
     font-size: 0.9rem;
     padding: 20px;
     z-index: 1;
-    margin-bottom: -80px;
+    margin-bottom: -50px;
   }
-  

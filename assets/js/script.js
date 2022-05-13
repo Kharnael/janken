@@ -6,29 +6,44 @@ let possibleChoices = document.getElementsByName('playGame')
 let choice
 let result
 
+
 // audio correct de bouton
 let playWin = () => {
-  new Audio('assets/img/nice.mp3').play()
+  new Audio('assets/sound/nice.mp3').play()
   Audio.volume = 0.2;
 }
 
 // audio incorrect de bouton
 let playLose = () => {
-  new Audio('assets/img/wrong.mp3').play()
+  new Audio('assets/sound/wrong.mp3').play()
   Audio.volume = 0.2;
 }
 
 //audio égalité de bouton
 let playDraw = () => {
-  new Audio('assets/img/draw.mp3').play()
+  new Audio('assets/sound/draw.mp3').play()
   Audio.volume = 0.2;
 }
 
 //bouton musique
-let playMusic = () => {
-  new Audio('assets/img/.mp3').play()
-  
+let playBgm = () => {
+  const music = document.querySelector('#music');
+  if(soundAmbiance.src == 'assets/img/volumeoff.svg' || soundAmbiance.src == 'assets/img/volumeoff.svg') {
+    soundAmbiance.src = 'assets/img/volume.svg';
+    music.volume = 0.5;
+    music.play();
+  } 
+  else {  
+  soundAmbiance.src ='assets/img/volumeoff.svg';
+  music.pause();
+  music.currentTime = 0;
+  }
 }
+
+// audio click
+let soundAmbiance = document.getElementById('soundAmbiance');
+soundAmbiance.addEventListener('click', play);
+
 
 
 // Génération de choix par l'ordinateur
@@ -36,13 +51,13 @@ let generateComputerChoice = () => {
     let randomNumber = Math.floor(Math.random() * 3) + 1 // je me suis renseigné, mais je comprends pas tout (à creuser)
     
     if (randomNumber === 1) {
-      computerChoice = 'Rock ぐう'
+      computerChoice = 'Rockぐう'
     } 
     else if (randomNumber === 2) {
-      computerChoice = 'Scissors ちょき'
+      computerChoice = 'Scissorsちょき'
     }
     else if (randomNumber === 3) {
-      computerChoice = 'Paper ぱあ'
+      computerChoice = 'Paperぱあ'
     }
     computerChoiceDisplay.innerHTML = (`Your foe has chosen : ${computerChoice}`)
   }
@@ -52,27 +67,27 @@ let generateComputerChoice = () => {
       result = 'Draw'
       playDraw()
     }
-    if (computerChoice === 'Rock ぐう' && choice === "Paper ぱあ") {
+    if (computerChoice === 'Rockぐう' && choice === "Paperぱあ") {
       result = 'You win'
       playWin()
     }
-    if (computerChoice === 'Rock ぐう' && choice === "Scissors ちょき") {
+    if (computerChoice === 'Rockぐう' && choice === "Scissorsちょき") {
       result = 'You lost'
       playLose()
     }
-    if (computerChoice === 'Paper ぱあ' && choice === "Scissors ちょき") {
+    if (computerChoice === 'Paperぱあ' && choice === "Scissorsちょき") {
       result = 'You win'
       playWin()
     }
-    if (computerChoice === 'Paper ぱあ' && choice === 'Rock ぐう') {
+    if (computerChoice === 'Paper ぱあ' && choice === 'Rockぐう') {
       result = 'You lose'
       playLose()
     }
-    if (computerChoice === 'Scissors ちょき' && choice === 'Rock ぐう') {
+    if (computerChoice === 'Scissorsちょき' && choice === 'Rockぐう') {
       result = 'You win'
       playWin()
     }
-    if (computerChoice === 'Scissors ちょき' && choice === "Paper ぱあ") {
+    if (computerChoice === 'Scissorsちょき' && choice === "Paperぱあ") {
       result = 'You lose'
       playLose()
     }
